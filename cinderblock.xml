@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <cinder>
 <block
-	name="CoC - Stencil"
+	name="CoC-Stencil"
 	id=""
 	author="Rene Christen"
 	summary="Utility functions for stencil buffer"
