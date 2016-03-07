@@ -6,7 +6,8 @@
 	author="Rene Christen"
 	summary="Utility functions for stencil buffer"
 	license=""
-	git=""
+	url="https://github.com/codeoncanvas/coc-stencil"
+	git="git://github.com/codeoncanvas/coc-stencil.git"
 	version=""
 	library=""
 	>
