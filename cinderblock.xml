@@ -7,7 +7,7 @@
 	summary="Utility functions for stencil buffer"
 	license=""
 	url="https://github.com/codeoncanvas/coc-stencil"
-	git="git://github.com/codeoncanvas/coc-stencil.git"
+	git="git@github.com:codeoncanvas/coc-stencil.git"
 	version=""
 	library=""
 	>
