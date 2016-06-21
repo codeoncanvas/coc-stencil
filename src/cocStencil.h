@@ -16,10 +16,19 @@ http://www.videotutorialsrock.com/opengl_tutorial/reflections/video.php
 #endif
 
 namespace coc {
-	
+
+//! \brief Static functions for using stencil buffer
+//!
+//! Example usage: \n
+//! coc::stencil::beginDrawingStencil(); \n
+//! //Draw your mask here. \n
+//! coc::stencil::beginUsingStencil(); \n
+//! //Draw your scene to be masked here. \n
+//! coc::stencil::endUsingStencil(); \n
+
 namespace stencil {
 
-    //set up to draw stencil
+    //! Set up to draw stencil
     static void beginDrawingStencil() {
         glClear(GL_STENCIL_BUFFER_BIT);
         glEnable(GL_STENCIL_TEST); //Enable using the stencil buffer
@@ -30,7 +39,7 @@ namespace stencil {
         //Set all of the pixels below to be 1 in the stencil buffer...
     }
 
-    //switch from drawing stencil to scene to be masked
+    //! Switch from drawing stencil to scene to be masked
     static void beginUsingStencil(bool _invert = 0) {
         glColorMask(1, 1, 1, 1); //Enable drawing colors to the screen
         //Make the stencil test pass only when the pixel is 1 in the stencil buffer unless inverted
@@ -39,7 +48,7 @@ namespace stencil {
         //Draw all pixels where the stencil buffer is 1...
     }
 
-    //back to normal unmasked drawing
+    //! Switch back to normal unmasked drawing
     static void endUsingStencil() {
         glDisable(GL_STENCIL_TEST); //Disable using the stencil buffer
     }
