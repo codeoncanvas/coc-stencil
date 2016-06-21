@@ -19,12 +19,14 @@ namespace coc {
 
 //! \brief Static functions for using stencil buffer
 //!
-//! Example usage: \n
-//! coc::stencil::beginDrawingStencil(); \n
-//! //Draw your mask here. \n
-//! coc::stencil::beginUsingStencil(); \n
-//! //Draw your scene to be masked here. \n
-//! coc::stencil::endUsingStencil(); \n
+//! Example usage:
+//! ```
+//! coc::stencil::beginDrawingStencil();
+//! //Draw your mask here.
+//! coc::stencil::beginUsingStencil();
+//! //Draw your scene to be masked here.
+//! coc::stencil::endUsingStencil();
+//! ```
 
 namespace stencil {
 
