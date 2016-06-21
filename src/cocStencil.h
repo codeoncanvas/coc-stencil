@@ -40,7 +40,8 @@ namespace stencil {
     }
 
     //! Switch from drawing stencil to scene to be masked
-    static void beginUsingStencil(bool _invert = 0) {
+    //! \param _invert If true masks area not drawn.
+    static void beginUsingStencil(bool _invert = false) {
         glColorMask(1, 1, 1, 1); //Enable drawing colors to the screen
         //Make the stencil test pass only when the pixel is 1 in the stencil buffer unless inverted
         _invert ? glStencilFunc(GL_NOTEQUAL, 1, 1) : glStencilFunc(GL_EQUAL, 1, 1);
