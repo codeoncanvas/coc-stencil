@@ -18,15 +18,17 @@ http://www.videotutorialsrock.com/opengl_tutorial/reflections/video.php
 namespace coc {
 
 //! \brief Static functions for using stencil buffer
-//!
-//! Example usage:
-//! ```
-//! coc::stencil::beginDrawingStencil();
-//! //Draw your mask here.
-//! coc::stencil::beginUsingStencil();
-//! //Draw your scene to be masked here.
-//! coc::stencil::endUsingStencil();
-//! ```
+
+/*!
+Example usage:
+```
+coc::stencil::beginDrawingStencil();
+//Draw your mask here.
+coc::stencil::beginUsingStencil();
+//Draw your scene to be masked here.
+coc::stencil::endUsingStencil();
+```
+*/
 
 namespace stencil {
 
